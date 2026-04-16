@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashWindows</title>
+    <style>
+        body {
+            background: #0d0d0d;
+            color: #e0e0e0;
+            font-family: Consolas, monospace;
+            padding: 40px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #4af626;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #4af626;
+            margin-top: 30px;
+        }
+        .section {
+            background: #1a1a1a;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid #4af626;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .download-button {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #4af626;
+            color: #0d0d0d;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+        .download-button:hover {
+            background: #3cd41f;
+        }
+<link rel="icon" type="image/png" href="images/favicon.png">
+    </style>
+</head>
+<body>
+
+    <h1>FlashWindows</h1>
+    <p>A fast-launching, sandboxed identity environment for Windows.</p>
+
+    <img src="images/logo.png" alt="FlashWindows main image">
+
+    <!-- DOWNLOAD BUTTON FOR THE BAT FILE -->
+    <a href="FlashWindows.bat" class="download-button" download>Download FlashWindows.bat</a>
+
+    <div class="section">
+        <h2>Instant Launch</h2>
+        <p>
+            FlashWindows starts instantly. Just double-click the <strong>FlashWindows.bat</strong> file and the environment boots in seconds. 
+            No installation, no system changes, and no admin permissions are required.
+        </p>
+        <p>
+            When FlashWindows starts, it activates a temporary identity, generates a clean user folder, and builds fresh Libraries. 
+            Everything happens inside a safe, isolated session that disappears when you close the window.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Launching Apps Inside FlashWindows</h2>
+        <p>
+            FlashWindows is a command-line driven environment. 
+            <strong>Any app you want to run inside FlashWindows must be launched from the FlashWindows command line.</strong>
+        </p>
+        <p>
+            This ensures the app inherits:
+        </p>
+        <ul>
+            <li>the FlashWindows user profile</li>
+            <li>the FlashWindows AppData and LocalAppData</li>
+            <li>the FlashWindows OS identity (e.g., “Flash Windows 3.0”)</li>
+            <li>the sandboxed folder structure</li>
+        </ul>
+        <p>
+            If an app is launched from outside FlashWindows, it will not enter the sandbox and will use your real Windows identity instead.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>What FlashWindows Is</h2>
+        <p>
+            FlashWindows is a temporary alternate identity for Windows. It creates a clean, isolated workspace where programs believe 
+            they are running under a different user, on a different machine, and even on a different OS version.
+        </p>
+        <p>
+            This makes it ideal for testing, experimenting, or running tools without affecting your real Windows account.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>How It Works</h2>
+        <p>
+            FlashWindows uses environment variables to construct a complete identity mask. When the BAT file launches, it sets:
+        </p>
+        <ul>
+            <li>a custom USERPROFILE</li>
+            <li>a clean AppData structure</li>
+            <li>a regenerated Libraries folder</li>
+            <li>a branded OS name (e.g., “Flash Windows 3.0”)</li>
+            <li>a sandboxed computer name</li>
+        </ul>
+        <p>
+            These changes only exist inside the FlashWindows session. When you close the window, everything resets and your real system remains untouched.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>The Purpose</h2>
+        <p>
+            FlashWindows exists to give users a clean, disposable environment that feels like a fresh Windows install — without creating new accounts 
+            or modifying the real system. It’s perfect for developers, testers, and anyone who wants a cinematic alternate-OS experience.
+        </p>
+    </div>
+
+</body>
+</html>
