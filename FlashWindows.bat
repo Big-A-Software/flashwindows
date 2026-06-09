@@ -107,3 +107,6 @@ rem Downloads.library-ms
 )
 
 echo Profile active. Libraries generated. User folder sandbox generated.
+
+cmd
+cls
